@@ -2,13 +2,13 @@
 CREATE TABLE toys (
 	ToyID INT Primary KEY,
 	Name VARCHAR(100) NOT NULL,
-	Quantity VARCHAR(100) NOT NULL,
+	Quantity INT NOT NULL,
 );
 
 CREATE TABLE cloths (
 	ClothID INT Primary KEY,
 	Name VARCHAR(100) NOT NULL,
-	Quantity VARCHAR(100) NOT NULL,
+	Quantity INT NOT NULL,
 );
  
 CREATE TABLE orders (
@@ -22,4 +22,3 @@ CREATE TABLE orders (
     FOREIGN KEY (ToyID) REFERENCES toys(ToyID),
 	FOREIGN KEY (ClothID) REFERENCES cloths(ClothID),
 );
-
